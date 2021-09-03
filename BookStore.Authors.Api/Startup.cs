@@ -1,6 +1,8 @@
+using BookStore.Authors.Api.Persistence;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -31,6 +33,12 @@ namespace BookStore.Authors.Api
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "BookStore.Authors.Api", Version = "v1" });
             });
+
+            services.AddDbContext<ContextAuthor>(opt =>
+            {
+                opt.UseNpgsql(Configuration.GetConnectionString("ConnectionDataBase"));
+            });
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
