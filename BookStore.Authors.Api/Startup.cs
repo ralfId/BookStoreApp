@@ -1,4 +1,7 @@
+using BookStore.Authors.Api.Application.AuthorFeatures.Commands;
 using BookStore.Authors.Api.Persistence;
+using FluentValidation.AspNetCore;
+using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -28,7 +31,7 @@ namespace BookStore.Authors.Api
         public void ConfigureServices(IServiceCollection services)
         {
 
-            services.AddControllers();
+            services.AddControllers().AddFluentValidation(config =>  config.RegisterValidatorsFromAssemblyContaining<CreateAuthorCommand>() );
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "BookStore.Authors.Api", Version = "v1" });
@@ -39,6 +42,9 @@ namespace BookStore.Authors.Api
                 opt.UseNpgsql(Configuration.GetConnectionString("ConnectionDataBase"));
             });
 
+
+            services.AddMediatR(typeof(CreateAuthorCommand).Assembly);
+            services.AddAutoMapper(typeof(CreateAuthorCommand));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
