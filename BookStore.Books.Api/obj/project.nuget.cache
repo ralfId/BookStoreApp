@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "u99aH+JAGiRlF14ByOrYFLsvnd0I31a2VVPWSNx2PV7UMp1bDe/kne4AO4Bla7+knzWOASaiTq2tRI5XU8DJwQ==",
+  "dgSpecHash": "Xr88IAaOUPJx0vQYnQZR0g84CLv31YsVK5/vXbFm7XsNQ48DZpZuDXgRnQgH91O0piT36W08/J416EMY+NGLSQ==",
   "success": true,
   "projectFilePath": "F:\\Career .Net\\03-Microservices con ASP.NET Core, RabbitMQ y Docker\\BookStore\\BookStore.Books.Api\\BookStore.Books.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ID\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\ID\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
+    "C:\\Users\\ID\\.nuget\\packages\\fluentvalidation\\10.3.3\\fluentvalidation.10.3.3.nupkg.sha512",
+    "C:\\Users\\ID\\.nuget\\packages\\fluentvalidation.aspnetcore\\10.3.3\\fluentvalidation.aspnetcore.10.3.3.nupkg.sha512",
+    "C:\\Users\\ID\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\10.3.3\\fluentvalidation.dependencyinjectionextensions.10.3.3.nupkg.sha512",
     "C:\\Users\\ID\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\ID\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
     "C:\\Users\\ID\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\9.0.0\\mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",

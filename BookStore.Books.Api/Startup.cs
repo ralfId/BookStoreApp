@@ -1,6 +1,8 @@
+using BookStore.Books.Api.Persistence;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -31,6 +33,8 @@ namespace BookStore.Books.Api
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "BookStore.Books.Api", Version = "v1" });
             });
+
+            services.AddDbContext<ContextBook>(config => { config.UseSqlServer(Configuration.GetConnectionString("ConnectionDB")); });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
