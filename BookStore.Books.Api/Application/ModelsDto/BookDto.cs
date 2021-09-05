@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace BookStore.Books.Api.Models
+namespace BookStore.Books.Api.Application.ModelsDto
 {
-    public class Book
+    public class BookDto
     {
         public Guid BookId { get; set; }
         public string Title { get; set; }

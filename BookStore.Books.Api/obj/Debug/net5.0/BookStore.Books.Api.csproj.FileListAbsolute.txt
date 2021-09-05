@@ -63,3 +63,6 @@ F:\Career .Net\03-Microservices con ASP.NET Core, RabbitMQ y Docker\BookStore\Bo
 F:\Career .Net\03-Microservices con ASP.NET Core, RabbitMQ y Docker\BookStore\BookStore.Books.Api\obj\Debug\net5.0\ref\BookStore.Books.Api.dll
 F:\Career .Net\03-Microservices con ASP.NET Core, RabbitMQ y Docker\BookStore\BookStore.Books.Api\obj\Debug\net5.0\BookStore.Books.Api.pdb
 F:\Career .Net\03-Microservices con ASP.NET Core, RabbitMQ y Docker\BookStore\BookStore.Books.Api\obj\Debug\net5.0\BookStore.Books.Api.genruntimeconfig.cache
+F:\Career .Net\03-Microservices con ASP.NET Core, RabbitMQ y Docker\BookStore\BookStore.Books.Api\bin\Debug\net5.0\FluentValidation.dll
+F:\Career .Net\03-Microservices con ASP.NET Core, RabbitMQ y Docker\BookStore\BookStore.Books.Api\bin\Debug\net5.0\FluentValidation.AspNetCore.dll
+F:\Career .Net\03-Microservices con ASP.NET Core, RabbitMQ y Docker\BookStore\BookStore.Books.Api\bin\Debug\net5.0\FluentValidation.DependencyInjectionExtensions.dll
