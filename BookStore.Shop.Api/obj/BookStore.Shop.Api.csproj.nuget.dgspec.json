@@ -74,9 +74,9 @@
               "target": "Package",
               "version": "[5.0.9, )"
             },
-            "MySql.Data": {
+            "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
-              "version": "[8.0.26, )"
+              "version": "[5.0.1, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

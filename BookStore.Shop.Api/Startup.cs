@@ -1,6 +1,8 @@
+using BookStore.Shop.Api.Persistence;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -27,10 +29,17 @@ namespace BookStore.Shop.Api
         {
 
             services.AddControllers();
+            services.AddDbContext<ContextShopping>(options =>
+            {
+                var mySqlConnString = Configuration.GetConnectionString("MySQLConnString");
+                options.UseMySql(mySqlConnString, ServerVersion.AutoDetect(mySqlConnString));
+            });
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "BookStore.Shop.Api", Version = "v1" });
             });
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
