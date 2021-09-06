@@ -1,4 +1,6 @@
+using BookStore.Shop.Api.Application.ShoppingFeatures.Commands;
 using BookStore.Shop.Api.Persistence;
+using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -39,6 +41,8 @@ namespace BookStore.Shop.Api
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "BookStore.Shop.Api", Version = "v1" });
             });
+
+            services.AddMediatR(typeof(CreateShoppingCommand).Assembly);
 
         }
 
