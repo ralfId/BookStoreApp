@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BookStore.Shop.Api.Migrations
 {
     [DbContext(typeof(ContextShopping))]
-    [Migration("20210905204800_InitialMySQLMigration")]
-    partial class InitialMySQLMigration
+    [Migration("20211119232509_MigrationMySQLInicial")]
+    partial class MigrationMySQLInicial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

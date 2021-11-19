@@ -4,7 +4,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace BookStore.Authors.Api.Migrations
 {
-    public partial class InitialMigrationPostgres : Migration
+    public partial class MigrationsPostgresInicial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace BookStore.Books.Api.Migrations
 {
-    public partial class InitialSQLServerMigration : Migration
+    public partial class MigrationsSQLServerInicial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -14,7 +14,7 @@ namespace BookStore.Books.Api.Migrations
                     BookId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     Title = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     PublicationDate = table.Column<DateTime>(type: "datetime2", nullable: true),
-                    AuthoBook = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
+                    AuthoBook = table.Column<Guid>(type: "uniqueidentifier", nullable: true)
                 },
                 constraints: table =>
                 {

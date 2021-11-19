@@ -10,8 +10,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace BookStore.Authors.Api.Migrations
 {
     [DbContext(typeof(ContextAuthor))]
-    [Migration("20210903044845_InitialMigrationPostgres")]
-    partial class InitialMigrationPostgres
+    [Migration("20211119223003_MigrationsPostgresInicial")]
+    partial class MigrationsPostgresInicial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

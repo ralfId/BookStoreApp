@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Xr88IAaOUPJx0vQYnQZR0g84CLv31YsVK5/vXbFm7XsNQ48DZpZuDXgRnQgH91O0piT36W08/J416EMY+NGLSQ==",
+  "dgSpecHash": "T8E+W69UqQAFKWboWu/eveCBUl3Vuxs7VDul2RUvyFyERsEi+A37spNbM27jsrXIwe0kQc7gxI8VSoAOSym59Q==",
   "success": true,
-  "projectFilePath": "F:\\Career .Net\\03-Microservices con ASP.NET Core, RabbitMQ y Docker\\BookStore\\BookStore.Books.Api\\BookStore.Books.Api.csproj",
+  "projectFilePath": "E:\\Career .Net\\03-Microservices con ASP.NET Core, RabbitMQ y Docker\\BookStore\\BookStore.Books.Api\\BookStore.Books.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ID\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\ID\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",

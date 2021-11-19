@@ -7,4 +7,4 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = BookStore.Books.Api
-build_property.ProjectDir = F:\Career .Net\03-Microservices con ASP.NET Core, RabbitMQ y Docker\BookStore\BookStore.Books.Api\
+build_property.ProjectDir = E:\Career .Net\03-Microservices con ASP.NET Core, RabbitMQ y Docker\BookStore\BookStore.Books.Api\

@@ -1,5 +1,7 @@
 using BookStore.Shop.Api.Application.ShoppingFeatures.Commands;
 using BookStore.Shop.Api.Persistence;
+using BookStore.Shop.Api.RemoteServices.IServices;
+using BookStore.Shop.Api.RemoteServices.Services;
 using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -41,8 +43,17 @@ namespace BookStore.Shop.Api
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "BookStore.Shop.Api", Version = "v1" });
             });
+            services.AddHttpClient("Book", confg =>
+            {
+                confg.BaseAddress = new Uri(Configuration["Services:Books"]);
+            });
+
+            var serviceProvider = services.BuildServiceProvider();
+            var logger = serviceProvider.GetService<ILogger<BookServices>>();
+            services.AddSingleton(typeof(ILogger), logger);
 
             services.AddMediatR(typeof(CreateShoppingCommand).Assembly);
+            services.AddScoped<IBookServices, BookServices>();
 
         }
 

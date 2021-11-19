@@ -25,7 +25,7 @@ namespace BookStore.Books.Api.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid>("AuthoBook")
+                    b.Property<Guid?>("AuthoBook")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime?>("PublicationDate")

@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BookStore.Books.Api.Migrations
 {
     [DbContext(typeof(ContextBook))]
-    [Migration("20210904170917_InitialSQLServerMigration")]
-    partial class InitialSQLServerMigration
+    [Migration("20211119223959_MigrationsSQLServerInicial")]
+    partial class MigrationsSQLServerInicial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -27,7 +27,7 @@ namespace BookStore.Books.Api.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid>("AuthoBook")
+                    b.Property<Guid?>("AuthoBook")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime?>("PublicationDate")

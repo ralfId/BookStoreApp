@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace BookStore.Shop.Api.Migrations
 {
-    public partial class InitialMySQLMigration : Migration
+    public partial class MigrationMySQLInicial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
