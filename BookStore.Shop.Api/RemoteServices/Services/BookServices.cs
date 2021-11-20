@@ -21,7 +21,7 @@ namespace BookStore.Shop.Api.RemoteServices.Services
             _logger = logger;
         }
 
-        public async Task<(bool result, BookRM book, string error)> GetBook(Guid BookId)
+        public async Task<(bool result, BookRM book, string error)> GetBookAsync(Guid BookId)
         {
             try
             {

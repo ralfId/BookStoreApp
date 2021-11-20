@@ -8,6 +8,6 @@ namespace BookStore.Shop.Api.RemoteServices.IServices
 {
     public interface IBookServices
     {
-        Task<(bool result, BookRM book, string error)> GetBook(Guid BookId);
+        Task<(bool result, BookRM book, string error)> GetBookAsync(Guid BookId);
     }
 }

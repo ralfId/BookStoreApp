@@ -1,4 +1,6 @@
-﻿using BookStore.Shop.Api.Application.ShoppingFeatures.Commands;
+﻿using BookStore.Shop.Api.Application.ModelsDto;
+using BookStore.Shop.Api.Application.ShoppingFeatures.Commands;
+using BookStore.Shop.Api.Application.ShoppingFeatures.Queries;
 using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -24,6 +26,12 @@ namespace BookStore.Shop.Api.Controllers
         public async Task<ActionResult<Unit>> CreaShopping(CreateShoppingCommand createShopping)
         {
             return await _mediator.Send(createShopping);
+        }
+
+        [HttpGet("{id}")]
+        public async Task<ActionResult<ShoppingCartDto>> GetShoppingCart(int id)
+        {
+            return await _mediator.Send(new GetShoppingDetailQuery { ShoppingSessionId = id });
         }
     }
 }

@@ -9,6 +9,6 @@ namespace BookStore.Shop.Api.Application.ModelsDto
     {
         public int ShoppingId { get; set; }
         public DateTime? CreationDate { get; set; }
-        public List<ShoppingDetailDto> ProductList { get; set; }
+        public List<ShoppingItemDto> ProductList { get; set; }
     }
 }

@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace BookStore.Shop.Api.Application.ModelsDto
 {
-    public class ShoppingDetailDto
+    public class ShoppingItemDto
     {
         public Guid? BookId { get; set; }
         public string BookTitle { get; set; }
