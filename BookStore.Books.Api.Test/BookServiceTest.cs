@@ -20,6 +20,7 @@ namespace BookStore.Books.Api.Test
     { 
         private IEnumerable<Book> GetDataTest()
         {
+            //this is data with GenFu
             A.Configure<Book>()
                 .Fill(x => x.Title).AsArticleTitle()
                 .Fill(x => x.AuthoBook, () => { return Guid.NewGuid(); });
