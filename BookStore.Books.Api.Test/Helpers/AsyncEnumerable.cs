@@ -10,6 +10,10 @@ namespace BookStore.Books.Api.Test.Helpers
 {
     public class AsyncEnumerable<T> : EnumerableQuery<T>, IAsyncEnumerable<T>, IQueryable<T>
     {
+        public AsyncEnumerable(IEnumerable<T> enumerable) : base(enumerable)
+        {
+
+        }
         public AsyncEnumerable(Expression expression) : base(expression)
         {
 
@@ -18,6 +22,11 @@ namespace BookStore.Books.Api.Test.Helpers
         public IAsyncEnumerator<T> GetAsyncEnumerator(CancellationToken cancellationToken = default)
         {
             return new AsyncEnumerator<T>(this.AsEnumerable().GetEnumerator());
+        }
+
+        IQueryProvider IQueryable.Provider
+        {
+            get => new AsyncQueryProvider<T>(this);
         }
     }
 }
