@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using BookStore.Books.Api.Application.BookFeatures.Commands;
 using BookStore.Books.Api.Application.BookFeatures.Queries;
 using BookStore.Books.Api.Application.ModelsDto;
 using BookStore.Books.Api.Models;
@@ -77,7 +78,7 @@ namespace BookStore.Books.Api.Test
         [Fact]
         public async void GetBooks()
         {
-            System.Diagnostics.Debugger.Launch();
+            //System.Diagnostics.Debugger.Launch();
             /**
              * Que me todo dentro del microservicio se encarga de realizar la consulta 
              * de libros de la base de datos?
@@ -107,6 +108,30 @@ namespace BookStore.Books.Api.Test
             var lstBooks = await handler.Handle(executeQuery, new System.Threading.CancellationToken());
 
             Assert.True(lstBooks.Any());
+        }
+
+        [Fact]
+        public async void SaveBook()
+        {
+            System.Diagnostics.Debugger.Launch();
+
+            var opt = new DbContextOptionsBuilder<ContextBook>()
+                .UseInMemoryDatabase(databaseName: "BooksDB")
+                .Options;
+
+            var context = new ContextBook(opt);
+            var request = new CreateBookCommand();
+            request.Author = Guid.Empty;
+            request.Title = "Libro Microservicios";
+            request.PublicationDate = DateTime.Now;
+
+            var handler = new CreateBookCommandHandler(context);
+
+            var createdBook = await handler.Handle(request, new System.Threading.CancellationToken());
+
+            Assert.True(createdBook != null);
+
+
         }
     }
 }

@@ -150,3 +150,4 @@ E:\Career .Net\03-Microservices con ASP.NET Core, RabbitMQ y Docker\BookStore\Bo
 E:\Career .Net\03-Microservices con ASP.NET Core, RabbitMQ y Docker\BookStore\BookStore.Books.Api.Test\obj\Debug\net5.0\ref\BookStore.Books.Api.Test.dll
 E:\Career .Net\03-Microservices con ASP.NET Core, RabbitMQ y Docker\BookStore\BookStore.Books.Api.Test\obj\Debug\net5.0\BookStore.Books.Api.Test.pdb
 E:\Career .Net\03-Microservices con ASP.NET Core, RabbitMQ y Docker\BookStore\BookStore.Books.Api.Test\obj\Debug\net5.0\BookStore.Books.Api.Test.genruntimeconfig.cache
+E:\Career .Net\03-Microservices con ASP.NET Core, RabbitMQ y Docker\BookStore\BookStore.Books.Api.Test\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.InMemory.dll
