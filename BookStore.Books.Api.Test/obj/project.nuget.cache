@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "BCVbL231r719ij8tfsJs5JwQPWPM19IWl3wF9tX5S6a4e/dDXX4dsZaZdlZ2Tx4bqB+XNWInyEmqONCw72vq0g==",
+  "dgSpecHash": "6/U2D+FCoqlT9cAKQgxRs/L/OL0cCM7LjKQPkSSY2Dg1vBGgSfd33p6eH3SKCsjKlUTPfl82t4Y2hCZb/QLbRg==",
   "success": true,
   "projectFilePath": "E:\\Career .Net\\03-Microservices con ASP.NET Core, RabbitMQ y Docker\\BookStore\\BookStore.Books.Api.Test\\BookStore.Books.Api.Test.csproj",
   "expectedPackageFiles": [
@@ -18,9 +18,10 @@
     "C:\\Users\\ID\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\ID\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",
     "C:\\Users\\ID\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.0.1\\microsoft.data.sqlclient.sni.runtime.2.0.1.nupkg.sha512",
-    "C:\\Users\\ID\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.9\\microsoft.entityframeworkcore.5.0.9.nupkg.sha512",
-    "C:\\Users\\ID\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.9\\microsoft.entityframeworkcore.abstractions.5.0.9.nupkg.sha512",
-    "C:\\Users\\ID\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\5.0.9\\microsoft.entityframeworkcore.analyzers.5.0.9.nupkg.sha512",
+    "C:\\Users\\ID\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.12\\microsoft.entityframeworkcore.5.0.12.nupkg.sha512",
+    "C:\\Users\\ID\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.12\\microsoft.entityframeworkcore.abstractions.5.0.12.nupkg.sha512",
+    "C:\\Users\\ID\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\5.0.12\\microsoft.entityframeworkcore.analyzers.5.0.12.nupkg.sha512",
+    "C:\\Users\\ID\\.nuget\\packages\\microsoft.entityframeworkcore.inmemory\\5.0.12\\microsoft.entityframeworkcore.inmemory.5.0.12.nupkg.sha512",
     "C:\\Users\\ID\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\5.0.9\\microsoft.entityframeworkcore.relational.5.0.9.nupkg.sha512",
     "C:\\Users\\ID\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\5.0.9\\microsoft.entityframeworkcore.sqlserver.5.0.9.nupkg.sha512",
     "C:\\Users\\ID\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
