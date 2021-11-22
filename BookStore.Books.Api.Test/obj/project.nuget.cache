@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "aOks5P597ssmUGbj+u17pd+4gNOZWNB7CqaC7picUpiyPtAQF3jwWaaOyoOeRcgkUzZSO1/Eo7l/oEaNFhnk/Q==",
+  "dgSpecHash": "BCVbL231r719ij8tfsJs5JwQPWPM19IWl3wF9tX5S6a4e/dDXX4dsZaZdlZ2Tx4bqB+XNWInyEmqONCw72vq0g==",
   "success": true,
   "projectFilePath": "E:\\Career .Net\\03-Microservices con ASP.NET Core, RabbitMQ y Docker\\BookStore\\BookStore.Books.Api.Test\\BookStore.Books.Api.Test.csproj",
   "expectedPackageFiles": [
@@ -11,6 +11,7 @@
     "C:\\Users\\ID\\.nuget\\packages\\fluentvalidation\\10.3.3\\fluentvalidation.10.3.3.nupkg.sha512",
     "C:\\Users\\ID\\.nuget\\packages\\fluentvalidation.aspnetcore\\10.3.3\\fluentvalidation.aspnetcore.10.3.3.nupkg.sha512",
     "C:\\Users\\ID\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\10.3.3\\fluentvalidation.dependencyinjectionextensions.10.3.3.nupkg.sha512",
+    "C:\\Users\\ID\\.nuget\\packages\\genfu\\1.6.0\\genfu.1.6.0.nupkg.sha512",
     "C:\\Users\\ID\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
     "C:\\Users\\ID\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\9.0.0\\mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",
     "C:\\Users\\ID\\.nuget\\packages\\microsoft.codecoverage\\16.9.4\\microsoft.codecoverage.16.9.4.nupkg.sha512",

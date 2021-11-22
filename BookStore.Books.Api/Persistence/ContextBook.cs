@@ -9,11 +9,16 @@ namespace BookStore.Books.Api.Persistence
 {
     public class ContextBook :DbContext
     {
+        public ContextBook()
+        {
+
+        }
+
         public ContextBook(DbContextOptions<ContextBook> options) : base(options)
         {
 
         }
 
-        public DbSet<Book> Book { get; set; }
+        public virtual DbSet<Book> Book { get; set; }
     }
 }
